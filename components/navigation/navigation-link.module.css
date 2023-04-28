@@ -1,7 +1,8 @@
-.link {
-}
 .link a {
   color: var(--light-grey);
   font-size: 1.5rem;
   text-decoration: none;
+}
+.link a:hover {
+  color: var(--neon-green);
 }

@@ -1,3 +1,4 @@
+import NavigationBrand from "./navigation-brand";
 import NavigationLink from "./navigation-link";
 
 import classes from "./navigation.module.css";
@@ -5,14 +6,15 @@ import classes from "./navigation.module.css";
 const Navigation = () => {
   return (
     <header className={classes.header}>
+      <NavigationBrand />
       <nav>
         <ul>
-          <NavigationLink href="/" title="Home page" text="HOME" />
-          <NavigationLink href="/about" title="About page" text="ABOUT" />
+          <NavigationLink href="/" title="Home page" text="Home" />
+          <NavigationLink href="/about" title="About page" text="About" />
           <NavigationLink
             href="/portfolio"
             title="Portfolio page"
-            text="PORTFOLIO"
+            text="Portfolio"
           />
         </ul>
       </nav>
