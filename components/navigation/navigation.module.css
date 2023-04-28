@@ -1,0 +1,8 @@
+.header {
+  background-color: var(--dark-black);
+}
+.header ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

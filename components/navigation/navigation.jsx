@@ -1,16 +1,18 @@
 import NavigationLink from "./navigation-link";
 
+import classes from "./navigation.module.css";
+
 const Navigation = () => {
   return (
-    <header>
+    <header className={classes.header}>
       <nav>
         <ul>
-          <NavigationLink href="/" title="Home page" text="Home" />
-          <NavigationLink href="/about" title="About page" text="About" />
+          <NavigationLink href="/" title="Home page" text="HOME" />
+          <NavigationLink href="/about" title="About page" text="ABOUT" />
           <NavigationLink
             href="/portfolio"
             title="Portfolio page"
-            text="Portfolio"
+            text="PORTFOLIO"
           />
         </ul>
       </nav>
