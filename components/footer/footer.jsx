@@ -1,9 +1,12 @@
 import Link from "next/link";
 import NavigationBrand from "../navigation/navigation-brand";
 
+import classes from "./footer.module.css";
+import CurrentYear from "./current-year";
+
 const Footer = () => {
   return (
-    <footer>
+    <footer className={classes.footer}>
       <div>
         <Link
           href="https://www.linkedin.com/in/nedyalko-draganov-12958a235/"
@@ -18,6 +21,7 @@ const Footer = () => {
       </div>
       <div>
         <NavigationBrand />
+        <CurrentYear />
       </div>
     </footer>
   );
