@@ -1,0 +1,13 @@
+.button {
+  border: 1px solid var(--dark-green);
+}
+.button a {
+  color: var(--dark-green);
+  font-size: 1.5rem;
+}
+.button:hover {
+  border: 1px solid var(--neon-green);
+}
+.button:hover a {
+  color: var(--light-grey);
+}
