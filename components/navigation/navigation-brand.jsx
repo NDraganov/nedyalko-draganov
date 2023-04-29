@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const NavigationBrand = () => {
+const NavigationBrand = ({ onClick }) => {
   return (
     <Link href="/" title="Home page">
       {/* Logo create by Logo.com, crafted by me */}
@@ -11,6 +11,7 @@ const NavigationBrand = () => {
         priority={true}
         width={60}
         height={60}
+        onClick={onClick}
       />
     </Link>
   );

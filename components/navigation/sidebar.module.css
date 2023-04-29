@@ -6,17 +6,19 @@
   width: 65%;
   min-height: 100vh;
   background-color: var(--dark-green);
-  padding: 3rem 0 0 3rem;
   z-index: 2;
   animation-name: slide;
   animation-duration: 0.7s;
 }
-.sidebar svg {
+.sidebar .svg {
+  padding: 3rem 0 0 3rem;
+}
+.sidebar .svg svg {
   color: var(--dark-black);
   animation-name: slide-rotate;
   animation-duration: 1s;
 }
-.sidebar svg:hover {
+.sidebar .svg svg:hover {
   cursor: pointer;
   color: var(--light-grey);
   animation-name: rotate;
@@ -26,9 +28,12 @@
   display: grid;
   gap: 1.5rem;
   list-style: none;
-  padding-top: 3rem;
+  padding: 3rem 0 0 3rem;
 }
-.sidebar a {
+.sidebar nav ul a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   color: var(--dark-black);
   font-size: 2rem;
   font-weight: 300;
@@ -36,8 +41,25 @@
   animation-name: slide-links;
   animation-duration: 1s;
 }
-.sidebar a:hover {
+.sidebar nav ul a:hover {
   color: var(--light-grey);
+}
+.sidebar .footer {
+  position: fixed;
+  top: 85%;
+  bottom: 0;
+  left: 0;
+  right: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--dark-black);
+}
+.sidebar .footer svg {
+  color: var(--dark-green);
+}
+.sidebar .footer svg:hover {
+  color: var(--neon-green);
 }
 .background {
   position: fixed;
