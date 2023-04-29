@@ -16,3 +16,6 @@
   --dark-green: #82cd47;
   --neon-green: #a8ff3e;
 }
+body {
+  background-color: var(--dark-black);
+}

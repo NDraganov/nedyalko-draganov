@@ -1,0 +1,11 @@
+.intro h1 {
+  color: var(--dark-green);
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.intro .occupation {
+  color: var(--light-grey);
+  font-size: 3rem;
+  font-weight: 300;
+}
