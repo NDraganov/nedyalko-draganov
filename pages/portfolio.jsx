@@ -1,22 +1,33 @@
 import fs from "fs/promises";
 import path from "path";
+import { Fragment } from "react";
+import Head from "next/head";
 import ProjectItem from "../components/portfolio-page/project-item";
 
 import classes from "./portfolio.module.css";
 
 const Portfolio = ({ projects }) => {
   return (
-    <div className={classes.portfolio}>
-      <h1>Porfolio</h1>
-      <section className={classes.learning}>
-        <h2>Learning People projects</h2>
-        <ul>
-          {projects.map((project) => (
-            <ProjectItem key={project.id} project={project} />
-          ))}
-        </ul>
-      </section>
-    </div>
+    <Fragment>
+      <Head>
+        <title>Portfolio</title>
+        <meta
+          name="description"
+          content="Nedyalko Draganov portfolio projects"
+        />
+      </Head>
+      <div className={classes.portfolio}>
+        <h1>Porfolio</h1>
+        <section className={classes.learning}>
+          <h2>Learning People projects</h2>
+          <ul>
+            {projects.map((project) => (
+              <ProjectItem key={project.id} project={project} />
+            ))}
+          </ul>
+        </section>
+      </div>
+    </Fragment>
   );
 };
 

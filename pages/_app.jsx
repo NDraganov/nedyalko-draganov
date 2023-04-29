@@ -8,6 +8,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="/images/logo.svg" type="image/x-icon" />
       </Head>
       <Component {...pageProps} />
     </Layout>
