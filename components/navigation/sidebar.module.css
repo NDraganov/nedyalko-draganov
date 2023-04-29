@@ -1,0 +1,47 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 65%;
+  min-height: 100vh;
+  background-color: var(--dark-green);
+  padding: 3rem 0 0 3rem;
+  z-index: 2;
+}
+.sidebar svg {
+  color: var(--dark-black);
+}
+.sidebar svg:hover {
+  cursor: pointer;
+  color: var(--light-grey);
+}
+.sidebar ul {
+  display: grid;
+  gap: 1.5rem;
+  list-style: none;
+  padding-top: 3rem;
+}
+.sidebar a {
+  color: var(--dark-black);
+  font-size: 2rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  color: var(--light-grey);
+}
+.background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark-black);
+  z-index: 1;
+  opacity: 0.5;
+}
