@@ -1,13 +1,36 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
   gap: 2rem;
   background-color: var(--dark-black);
   font-family: "Poppins", sans-serif;
+  height: 6rem;
   padding: 0.5rem 1rem;
+  z-index: 1;
+}
+.header svg {
+  color: var(--dark-green);
+  margin-right: 1rem;
+}
+.header svg:hover {
+  cursor: pointer;
+  color: var(--neon-green);
 }
 .header ul {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+  .header nav {
+    display: none;
+  }
 }
