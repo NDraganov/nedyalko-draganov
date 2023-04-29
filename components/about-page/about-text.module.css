@@ -1,0 +1,10 @@
+.text p {
+  color: var(--light-grey);
+  font-size: 1.7rem;
+  font-weight: 200;
+  padding-bottom: 1.8rem;
+  text-align: left;
+}
+.text span {
+  color: var(--dark-green);
+}
