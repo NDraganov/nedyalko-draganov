@@ -1,0 +1,28 @@
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.buttons a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--dark-green);
+  border: 1px solid var(--dark-green);
+  border-radius: 5px;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+.buttons a:hover {
+  color: var(--light-grey);
+  border: 1px solid var(--neon-green);
+}
+.buttons a svg {
+  color: var(--dark-green);
+}
+.buttons a:hover svg {
+  color: var(--neon-green);
+}
