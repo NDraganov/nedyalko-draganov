@@ -1,16 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import classes from "./pproject-item.module.css";
+import classes from "./project-item.module.css";
 
-const ProjectItem = ({
-  image,
-  title,
-  technologies,
-  description,
-  lhref,
-  ghref,
-}) => {
+const ProjectItem = (props) => {
+  const { image, title, technologies, description, lhref, ghref } =
+    props.project;
   return (
     <li>
       <div className={classes.project}>
