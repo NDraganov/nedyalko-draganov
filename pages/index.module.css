@@ -1,6 +1,6 @@
 .home {
   display: grid;
   place-items: center;
-  min-height: 80vh;
+  min-height: 100vh;
   margin: 0 5rem;
 }

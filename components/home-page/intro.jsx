@@ -6,7 +6,7 @@ import classes from "./intro.module.css";
 const Intro = () => {
   return (
     <div className={classes.intro}>
-      <h1>Nedyalko Draganov</h1>
+      <p className={classes.title}>Nedyalko Draganov</p>
       <p className={classes.occupation}>Web Developer</p>
       <IntroDescription />
       <HomeLinks />
