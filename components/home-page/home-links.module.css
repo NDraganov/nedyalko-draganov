@@ -4,6 +4,8 @@
   justify-content: left;
   gap: 1rem;
   margin-top: 1.5rem;
+  animation-name: up;
+  animation-duration: 3s;
 }
 .buttons a {
   display: flex;
@@ -25,4 +27,21 @@
 }
 .buttons a:hover svg {
   color: var(--neon-green);
+}
+
+@keyframes up {
+  from {
+    transform: translateY(600%);
+    -webkit-transform: translateY(600%);
+    -moz-transform: translateY(600%);
+    -o-transform: translateY(600%);
+    -ms-transform: translateY(600%);
+  }
+  to {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+  }
 }
