@@ -1,9 +1,12 @@
 .button {
   border: 1px solid var(--dark-green);
+  border-radius: 5px;
 }
 .button a {
   color: var(--dark-green);
   font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
 }
 .button:hover {
   border: 1px solid var(--neon-green);

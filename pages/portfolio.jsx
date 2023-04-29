@@ -9,7 +9,7 @@ const Portfolio = ({ projects }) => {
     <div className={classes.portfolio}>
       <h1>Porfolio</h1>
       <section className={classes.learning}>
-        <h2>Learning People Projects</h2>
+        <h2>Learning People projects</h2>
         <ul>
           {projects.map((project) => (
             <ProjectItem key={project.id} project={project} />
