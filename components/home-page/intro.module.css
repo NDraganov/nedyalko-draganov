@@ -3,9 +3,47 @@
   font-size: 5rem;
   font-weight: 500;
   line-height: 1;
+  animation-name: to-left;
+  animation-duration: 3s;
 }
 .intro .occupation {
   color: var(--light-grey);
   font-size: 3rem;
   font-weight: 300;
+  animation-name: to-right;
+  animation-duration: 3s;
+}
+
+@keyframes to-left {
+  from {
+    transform: translateX(200%);
+    -webkit-transform: translateX(200%);
+    -moz-transform: translateX(200%);
+    -o-transform: translateX(200%);
+    -ms-transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+  }
+}
+
+@keyframes to-right {
+  from {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -ms-transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    -ms-transform: translateX(100%);
+  }
 }
