@@ -10,7 +10,13 @@ const ProjectItem = (props) => {
   return (
     <li>
       <div className={classes.project}>
-        <Image src={image} alt={title} width={780} height={450}></Image>
+        <Image
+          src={image}
+          alt={title}
+          priority={true}
+          width={780}
+          height={450}
+        ></Image>
         <div className={classes.description}>
           <h3>{title}</h3>
           <h5>Build with</h5>
