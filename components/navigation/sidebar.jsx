@@ -1,4 +1,4 @@
-import NavigationLink from "./navigation-link";
+import Link from "next/link";
 import CloseIcon from "@mui/icons-material/Close";
 
 import classes from "./sidebar.module.css";
@@ -10,24 +10,15 @@ const Sidebar = ({ style, click }) => {
         <CloseIcon sx={{ fontSize: 30 }} onClick={click} />
         <nav>
           <ul>
-            <NavigationLink
-              href="/"
-              title="Home page"
-              text="Home"
-              onClick={click}
-            />
-            <NavigationLink
-              href="/about"
-              title="About page"
-              text="About"
-              onClick={click}
-            />
-            <NavigationLink
-              href="/portfolio"
-              title="Portfolio page"
-              text="Portfolio"
-              onClick={click}
-            />
+            <Link href="/" title="Home page" onClick={click}>
+              Home
+            </Link>
+            <Link href="/about" title="About page" onClick={click}>
+              About
+            </Link>
+            <Link href="/portfolio" title="Portfolio page" onClick={click}>
+              Portfolio
+            </Link>
           </ul>
         </nav>
       </div>

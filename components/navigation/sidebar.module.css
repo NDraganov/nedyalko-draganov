@@ -8,15 +8,21 @@
   background-color: var(--dark-green);
   padding: 3rem 0 0 3rem;
   z-index: 2;
+  animation-name: slide;
+  animation-duration: 0.7s;
 }
 .sidebar svg {
   color: var(--dark-black);
+  animation-name: slide-rotate;
+  animation-duration: 1s;
 }
 .sidebar svg:hover {
   cursor: pointer;
   color: var(--light-grey);
+  animation-name: rotate;
+  animation-duration: 1s;
 }
-.sidebar ul {
+.sidebar nav ul {
   display: grid;
   gap: 1.5rem;
   list-style: none;
@@ -27,6 +33,8 @@
   font-size: 2rem;
   font-weight: 300;
   text-decoration: none;
+  animation-name: slide-links;
+  animation-duration: 1s;
 }
 .sidebar a:hover {
   color: var(--light-grey);
@@ -44,4 +52,74 @@
   background-color: var(--dark-black);
   z-index: 1;
   opacity: 0.5;
+}
+
+@keyframes slide {
+  from {
+    transform: translate(-85%);
+  }
+  to {
+    transform: translate(0%);
+  }
+}
+
+@keyframes slide-rotate {
+  from {
+    transform: translate(-85%);
+    -webkit-transform: translate(-85%);
+    -moz-transform: translate(-85%);
+    -o-transform: translate(-85%);
+    -ms-transform: translate(-85%);
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    transform: translate(0%);
+    -webkit-transform: translate(0%);
+    -moz-transform: translate(0%);
+    -o-transform: translate(0%);
+    -ms-transform: translate(0%);
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }
+}
+
+@keyframes slide-links {
+  from {
+    transform: translate(-85%);
+    -webkit-transform: translate(-85%);
+    -moz-transform: translate(-85%);
+    -o-transform: translate(-85%);
+    -ms-transform: translate(-85%);
+  }
+  to {
+    transform: translate(0%);
+    -webkit-transform: translate(0%);
+    -moz-transform: translate(0%);
+    -o-transform: translate(0%);
+    -ms-transform: translate(0%);
+  }
 }

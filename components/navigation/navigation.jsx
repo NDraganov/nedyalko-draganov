@@ -8,7 +8,11 @@ const Navigation = ({ click }) => {
   return (
     <header className={classes.header}>
       <NavigationBrand />
-      <MenuIcon sx={{ fontSize: 50 }} onClick={click} />
+      <MenuIcon
+        className={classes.menu}
+        sx={{ fontSize: 50 }}
+        onClick={click}
+      />
       <nav>
         <ul>
           <NavigationLink href="/" title="Home page" text="Home" />
