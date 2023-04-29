@@ -1,0 +1,14 @@
+.toolkit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  background-color: var(--dark-green);
+  border-radius: 5px;
+  margin: 2rem 0;
+}
+.toolkit p {
+  color: var(--dark-black);
+  font-size: 2rem;
+  padding: 1rem 0;
+}
