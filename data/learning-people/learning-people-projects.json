@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "id": "My Website",
+      "image": "/images/project-images/Nedyalko-portfolio-website.png",
+      "title": "Portfolio",
+      "technologies": "HTML CSS Bootstrap",
+      "description": "My first project for Learning People's course. The purpose of the project is to showcase my knowledge and ability to build a static Portfolio website as required. Bootstrap use for help with the layout and mobile responsiveness. Featuring navigation, about, skills, portfolio and contact sections.",
+      "lhref": "https://ndraganov.github.io/My-Web-Page/",
+      "ghref": "https://github.com/NDraganov/My-Web-Page"
+    },
+    {
+      "id": "GeoQuiz",
+      "image": "/images/project-images/GeoQuiz-game.png",
+      "title": "GeoQuiz",
+      "technologies": "HTML CSS JavaScript Bootstrap",
+      "description": "GeoQuiz game is my second project with Learning People. The purpose of the project is to showcase my knowledge and ability to build a JavaScript interactive website. Featuring navigation, about, how to play and the quiz sections. The quiz section contain questions, time and scores trackers. Also got soudns for correct and incorrect answers. After the completion of the quiz, summary report is displayed.",
+      "lhref": "https://ndraganov.github.io/JavaScript-QuizApp/",
+      "ghref": "https://github.com/NDraganov/JavaScript-QuizApp"
+    },
+    {
+      "id": "Sneakers e-commerce",
+      "image": "/images/project-images/Sneakers-e-commerce-website.png",
+      "title": "Sneakers",
+      "technologies": "React Bootstrap",
+      "description": "Third project with Learning People. E-commerce website Sneakers. The purpose of the project is to showcase my knowledge and ability to build a React app. The website featuring navigation with links, cart and user image, lightbox gallery, buttons for number of pairs, add to cart button and checkout modal with delete option.",
+      "lhref": "https://ndraganov.github.io/sneakers-react-app",
+      "ghref": "https://github.com/NDraganov/sneakers-react-app"
+    }
+  ]
+}
