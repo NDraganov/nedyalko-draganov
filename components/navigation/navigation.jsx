@@ -4,11 +4,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 import classes from "./navigation.module.css";
 
-const Navigation = () => {
+const Navigation = ({ click }) => {
   return (
     <header className={classes.header}>
       <NavigationBrand />
-      <MenuIcon sx={{ fontSize: 50 }} />
+      <MenuIcon sx={{ fontSize: 50 }} onClick={click} />
       <nav>
         <ul>
           <NavigationLink href="/" title="Home page" text="Home" />
