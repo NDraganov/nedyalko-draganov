@@ -39,3 +39,14 @@
   gap: 1rem;
   margin-top: 0.5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .project {
+    grid-template-columns: auto;
+    gap: 1rem;
+  }
+  .project img {
+    width: 27rem;
+    height: 15rem;
+  }
+}
