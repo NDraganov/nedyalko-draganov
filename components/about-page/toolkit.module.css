@@ -1,14 +1,47 @@
 .toolkit {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 3rem;
   background-color: var(--dark-green);
+  overflow-x: auto;
   border-radius: 5px;
   margin: 2rem 0;
+  padding: 1rem;
 }
 .toolkit p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
   color: var(--dark-black);
   font-size: 2rem;
-  padding: 1rem 0;
+  animation-name: rightToLeft;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.toolkit p span:hover {
+  color: var(--light-grey);
+}
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(130%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .toolkit p {
+    animation-duration: 12s;
+  }
+  @keyframes rightToLeft {
+    0% {
+      transform: translateX(40%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 }
