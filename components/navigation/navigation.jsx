@@ -11,11 +11,7 @@ const Navigation = ({ click }) => {
   return (
     <header className={classes.header}>
       <NavigationBrand />
-      <MenuIcon
-        className={classes.menu}
-        sx={{ fontSize: 50 }}
-        onClick={click}
-      />
+      <MenuIcon sx={{ fontSize: 50 }} onClick={click} />
       <nav>
         <ul>
           <NavigationLink

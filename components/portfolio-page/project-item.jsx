@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import Button from "../button/button";
 
@@ -24,8 +23,13 @@ const ProjectItem = (props) => {
           <h5>Description</h5>
           <p>{description}</p>
           <div className={classes.links}>
-            <Button href={lhref} title={title} text="Live site" />
-            <Button href={ghref} title={title} text="GitHub" />
+            <Button
+              href={lhref}
+              title={title}
+              target="_blank"
+              text="Live site"
+            />
+            <Button href={ghref} title={title} target="_blank" text="GitHub" />
           </div>
         </div>
       </div>

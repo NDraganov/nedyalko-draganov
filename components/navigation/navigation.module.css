@@ -12,12 +12,10 @@
   padding: 0.5rem 1rem;
   z-index: 1;
 }
-.menu {
-  display: none;
-}
 .header svg {
   color: var(--dark-green);
   margin-right: 1rem;
+  display: none !important;
 }
 .header svg:hover {
   cursor: pointer;
@@ -28,7 +26,6 @@
   align-items: center;
   gap: 1rem;
 }
-
 .active {
   color: var(--dark-green) !important;
   font-weight: 700 !important;
@@ -44,7 +41,7 @@
   .header nav {
     display: none;
   }
-  .menu {
-    display: block;
+  .header svg {
+    display: block !important;
   }
 }
