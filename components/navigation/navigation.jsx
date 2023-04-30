@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import NavigationBrand from "./navigation-brand";
 import NavigationLink from "./navigation-link";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -5,6 +6,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import classes from "./navigation.module.css";
 
 const Navigation = ({ click }) => {
+  const router = useRouter();
+  const currentRouter = router.pathname;
   return (
     <header className={classes.header}>
       <NavigationBrand />
@@ -15,9 +18,26 @@ const Navigation = ({ click }) => {
       />
       <nav>
         <ul>
-          <NavigationLink href="/" title="Home page" text="Home" />
-          <NavigationLink href="/about" title="About page" text="About" />
           <NavigationLink
+            style={currentRouter === "/" ? classes.active : classes.nonActive}
+            href="/"
+            title="Home page"
+            text="Home"
+          />
+          <NavigationLink
+            style={
+              currentRouter === "/about" ? classes.active : classes.nonActive
+            }
+            href="/about"
+            title="About page"
+            text="About"
+          />
+          <NavigationLink
+            style={
+              currentRouter === "/portfolio"
+                ? classes.active
+                : classes.nonActive
+            }
             href="/portfolio"
             title="Portfolio page"
             text="Portfolio"
