@@ -45,3 +45,10 @@
     -ms-transform: translateY(0%);
   }
 }
+
+@media screen and (max-width: 450px) {
+  .buttons a {
+    font-size: 1.1rem;
+    padding: 0.3rem 0.5rem;
+  }
+}
