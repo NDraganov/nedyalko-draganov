@@ -7,11 +7,15 @@
 }
 .project img {
   border-radius: 7px;
+  animation-name: to-right;
+  animation-duration: 2s;
 }
 .project .description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  animation-name: to-left;
+  animation-duration: 3s;
 }
 .project .description h3 {
   color: var(--dark-green);
@@ -38,6 +42,40 @@
   justify-content: left;
   gap: 1rem;
   margin-top: 0.5rem;
+}
+
+@keyframes to-right {
+  from {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+  }
+}
+
+@keyframes to-left {
+  from {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+  }
 }
 
 @media screen and (max-width: 768px) {
