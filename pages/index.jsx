@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <Fragment>
       <Head>
-        <title>Nedyalko Draganov Portfolio</title>
+        <title>Nedyalko Draganov - Web Developer - Portfolio</title>
         <meta
           name="description"
           content="Nedyalko Draganov - Web Developer - I design and code beautiful and colourful ideas, yet responsive and UI/UX friendly."

@@ -10,7 +10,7 @@ const About = () => {
   return (
     <Fragment>
       <Head>
-        <title>About</title>
+        <title>Nedyalko Draganov - Web Developer - About me</title>
         <meta
           name="description"
           content="Nedyalko Draganov - Web Developer - HTML CSS JavaScript React.js Next.js"

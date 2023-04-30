@@ -10,10 +10,10 @@ const Portfolio = ({ projects }) => {
   return (
     <Fragment>
       <Head>
-        <title>Portfolio</title>
+        <title>Nedyalko Draganov - Web Developer - Projects</title>
         <meta
           name="description"
-          content="Nedyalko Draganov portfolio projects"
+          content="Nedyalko Draganov - Web Developer - checkout my web app projects"
         />
       </Head>
       <div className={classes.portfolio}>
