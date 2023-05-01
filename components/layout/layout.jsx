@@ -18,7 +18,7 @@ const Layout = (props) => {
     <Fragment>
       <Navigation click={handleOpenSideBar} />
       <Sidebar
-        style={sideBar === false && classes.hide}
+        style={sideBar === false ? classes.hide : undefined}
         click={handleCloseSideBar}
       />
       <main>{props.children}</main>
