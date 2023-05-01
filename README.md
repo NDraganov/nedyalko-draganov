@@ -1,38 +1,91 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nedyalko Draganov - Web Developer - Portfolio website
 
-## Getting Started
+I design and code this portfolio website to showcase my projects, skills and the toolkit I'm using.
+This project is the first project I developed with Next.js.
 
-First, run the development server:
+The purpose of the website is to get in touch and present myself to employers. I keep the website content to three pages - Home, About and Portfolio for helping the HR team to preview the essential needed information about my coding skills. Contact page with functional contact form is in progress.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Overview
+
+### Features
+
+#### Layout wrapper
+
+- Fixed Navigation bar with my brand logo
+- Sidebar for mobile with my brand logo and social media links
+- Footer with my brand logo and social media links
+
+#### Pages and components
+
+- Home page with a short introduction and buttons for Portfolio page and email
+- About page with image, about me information, toolkit banner with animated text from right to left
+- Portfolio page with my Learning People course projects
+  Every project item consist of
+  - Image on the left side
+  - Intro on the right side
+    - Title on the top
+    - Build with technologies
+    - Description about the current project
+    - At the bottom links to the live site and the source code
+
+### Screenshots
+
+### Links
+
+[Source code](https://github.com/NDraganov/nedyalko-draganov)
+[Live site](https://nedyalko-draganov.vercel.app)
+
+## Development
+
+### Build with
+
+#### Next.js
+
+My choice for the framework was [Next.js](https://nextjs.org). Based on React.js, Next.js is full of build futures for optimization and production. That is the first case I used the Next.js.
+
+#### Pure CSS
+
+I decided to use pure CSS for the entire layout and styles for the project and improve my experience with Grid and Flexbox for the cases when I need custom styles instead of the predefined ones from frameworks and libraries like Bootstrap and Tailwind CSS.
+
+#### MUI
+
+I used [MUI](https://mui.com) for the project's icons.
+
+### New methods I learned
+
+To render my portfolio page with my project items, I used the built-in Next.js function getStaticProps for prerendering the HTML for SEO. I add async to not block the execution of the code. Inside the function, I used the file system to read the data from the learning-people-projects.json file and pass it to the props.
+
+```js
+export async function getStaticProps() {
+  const filePathLP = path.join(
+    process.cwd(),
+    "data/learning-people",
+    "learning-people-projects.json"
+  );
+  const jsonDataLP = await fs.readFile(filePathLP);
+  const dataLP = JSON.parse(jsonDataLP);
+  return {
+    props: {
+      projects: dataLP.projects,
+    },
+  };
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- I create new Next.js project using "create-next-app" in Hyper Terminal
+- Then I create new GitHub repository
+- Then I connect local to remote repository
+  - git init
+  - git add.
+  - git commit -m "message"
+  - git remote add origin "URL"
+  - git push -u origin master
+- I used the default "npm run build" command to optimize the project for production
+- Then I used "npm run start" to expect the production version
+- I used the Vercel platform for publishing my project
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Acknowledgments
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- My Next.js fundamentals I learn from Maximilian Schwarzmüller Udemy course - [Next.js & React - The Complete Guide (incl. Two Paths!)](https://www.udemy.com/course/nextjs-react-the-complete-guide/)
