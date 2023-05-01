@@ -3,7 +3,7 @@
   grid-template-columns: auto auto;
   gap: 4rem;
   color: var(--light-grey);
-  margin: 2rem 0;
+  margin-bottom: 2rem;
 }
 .project img {
   border-radius: 7px;
