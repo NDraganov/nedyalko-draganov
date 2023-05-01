@@ -1,12 +1,13 @@
 .buttons {
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: 1rem;
+  width: fit-content;
   margin-top: 1.5rem;
   animation-name: up;
   animation-duration: 3s;
 }
-.buttons a {
+.buttons div a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -17,14 +18,14 @@
   padding: 0.5rem 1rem;
   text-decoration: none;
 }
-.buttons a:hover {
+.buttons div a:hover {
   color: var(--light-grey);
   border: 1px solid var(--neon-green);
 }
-.buttons a svg {
+.buttons div a svg {
   color: var(--dark-green);
 }
-.buttons a:hover svg {
+.buttons div a:hover svg {
   color: var(--neon-green);
 }
 
