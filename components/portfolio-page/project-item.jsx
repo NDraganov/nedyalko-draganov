@@ -29,7 +29,12 @@ const ProjectItem = (props) => {
               target="_blank"
               text="Live site"
             />
-            <Button href={ghref} title={title} target="_blank" text="GitHub" />
+            <Button
+              href={ghref}
+              title={title}
+              target="_blank"
+              text="Source code"
+            />
           </div>
         </div>
       </div>
