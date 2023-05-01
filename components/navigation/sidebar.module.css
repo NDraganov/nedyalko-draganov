@@ -11,7 +11,7 @@
   animation-duration: 0.7s;
 }
 .sidebar .svg {
-  padding: 3rem 0 0 3rem;
+  padding: 3rem 0 0 2rem;
 }
 .sidebar .svg svg {
   color: var(--dark-black);
@@ -28,7 +28,7 @@
   display: grid;
   gap: 1.5rem;
   list-style: none;
-  padding: 3rem 0 0 3rem;
+  padding: 3rem 0 0 2rem;
 }
 .sidebar nav ul a {
   display: flex;
