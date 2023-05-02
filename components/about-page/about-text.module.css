@@ -1,3 +1,8 @@
+.text {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4rem;
+}
 .text p {
   color: var(--light-grey);
   font-size: 1.7rem;
@@ -10,6 +15,10 @@
 }
 
 @media screen and (max-width: 450px) {
+  .text {
+    grid-template-columns: auto;
+    gap: 1rem;
+  }
   .text p {
     font-size: 1.3rem;
   }

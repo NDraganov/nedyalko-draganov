@@ -18,13 +18,6 @@ const About = () => {
       </Head>
       <div className={classes.about}>
         <h1>About</h1>
-        <Image
-          src="/images/development.jpg"
-          alt="develop"
-          priority={true}
-          width={700}
-          height={400}
-        />
         <AboutText />
         <Toolkit />
       </div>

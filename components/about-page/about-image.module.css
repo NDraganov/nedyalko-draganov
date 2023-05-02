@@ -1,0 +1,32 @@
+.image {
+  display: flex;
+  flex-direction: column;
+}
+.image img {
+  width: auto !important;
+  margin: 1rem 0 !important;
+}
+.image p {
+  color: var(--dark-green);
+  font-size: 1rem !important;
+  text-align: center !important;
+}
+.image a {
+  color: var(--light-grey);
+  border-top: 1px solid var(--dark-green);
+  border-bottom: 1px solid var(--dark-green);
+  text-decoration: none;
+}
+.image a:hover {
+  color: var(--neon-green);
+}
+
+@media screen and (max-width: 450px) {
+  .image p {
+    font-size: 0.7rem !important;
+  }
+  .image a {
+    border-top: 0.5px solid var(--dark-green);
+    border-bottom: 0.5px solid var(--dark-green);
+  }
+}
