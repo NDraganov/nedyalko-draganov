@@ -16,7 +16,7 @@
 }
 
 @media screen and (max-width: 450px) {
-  .buttons a {
-    font-size: 1rem;
+  .button a {
+    font-size: 1.2rem;
   }
 }
