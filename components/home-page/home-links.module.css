@@ -4,8 +4,18 @@
   gap: 1rem;
   width: fit-content;
   margin-top: 1.5rem;
+}
+.buttons .first {
   animation-name: up;
-  animation-duration: 3s;
+  animation-duration: 2s;
+}
+.buttons .second {
+  animation-name: up;
+  animation-duration: 3.5s;
+}
+.buttons .third {
+  animation-name: up;
+  animation-duration: 4s;
 }
 .buttons div a {
   display: flex;
