@@ -32,7 +32,7 @@
   font-weight: 400;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 450px) {
   .page404 {
     margin: 2rem 2rem;
     text-align: center;

@@ -22,6 +22,9 @@
 }
 
 @media screen and (max-width: 450px) {
+  .image img {
+    height: 13rem !important;
+  }
   .image p {
     font-size: 0.7rem !important;
   }
