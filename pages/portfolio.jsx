@@ -3,6 +3,7 @@ import path from "path";
 import { Fragment } from "react";
 import Head from "next/head";
 import ProjectItem from "../components/portfolio-page/project-item";
+import CommingSoon from "../components/portfolio-page/coming-soon";
 
 import classes from "./portfolio.module.css";
 
@@ -26,6 +27,7 @@ const Portfolio = ({ projects }) => {
             ))}
           </ul>
         </section>
+        <CommingSoon text="Weather App coming soon ..." />
       </div>
     </Fragment>
   );

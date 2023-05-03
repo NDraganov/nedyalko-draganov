@@ -1,0 +1,18 @@
+.soon {
+  margin: 3rem 0;
+}
+.soon p {
+  color: var(--light-grey);
+  font-size: 3rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+  .soon {
+    margin: 2rem 0;
+  }
+  .soon p {
+    font-size: 1.7rem;
+  }
+}
