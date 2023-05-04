@@ -13,3 +13,9 @@
 .footer a svg {
   color: var(--dark-green);
 }
+
+@media screen and (max-width: 450px) {
+  .footer {
+    max-width: 100vw;
+  }
+}
