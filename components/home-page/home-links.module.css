@@ -41,11 +41,11 @@
 
 @keyframes up {
   from {
-    transform: translateY(600%);
-    -webkit-transform: translateY(600%);
-    -moz-transform: translateY(600%);
-    -o-transform: translateY(600%);
-    -ms-transform: translateY(600%);
+    transform: translateY(400%);
+    -webkit-transform: translateY(400%);
+    -moz-transform: translateY(400%);
+    -o-transform: translateY(400%);
+    -ms-transform: translateY(400%);
   }
   to {
     transform: translateY(0%);
