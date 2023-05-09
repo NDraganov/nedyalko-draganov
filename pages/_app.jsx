@@ -9,9 +9,9 @@ export default function App({ Component, pageProps }) {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
-          rel="shorcut icon"
-          href="/images/logo.svg"
+          rel="icon"
           as="image"
+          href="/images/logo.svg"
           type="image/x-icon"
         />
       </Head>
