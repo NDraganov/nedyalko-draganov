@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 import Head from "next/head";
-import Image from "next/image";
 import AboutText from "../components/about-page/about-text";
 import Toolkit from "../components/about-page/toolkit";
 
