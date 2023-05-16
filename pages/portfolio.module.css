@@ -1,6 +1,9 @@
 .portfolio {
   margin: 8rem 2rem 1rem;
 }
+.myown {
+  margin: 5rem 0;
+}
 
 @media screen and (max-width: 450px) {
   .portfolio {

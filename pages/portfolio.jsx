@@ -7,7 +7,7 @@ import CommingSoon from "../components/portfolio-page/coming-soon";
 
 import classes from "./portfolio.module.css";
 
-const Portfolio = ({ projects }) => {
+const Portfolio = ({ projects, myProjects }) => {
   return (
     <Fragment>
       <Head>
@@ -27,7 +27,15 @@ const Portfolio = ({ projects }) => {
             ))}
           </ul>
         </section>
-        <CommingSoon text="Weather App coming soon ..." />
+        <section className={classes.myown}>
+          <h2>My own projects</h2>
+          <ul>
+            {myProjects.map((project) => (
+              <ProjectItem key={project.id} project={project} />
+            ))}
+          </ul>
+        </section>
+        {/* <CommingSoon text="Weather App coming soon ..." /> */}
       </div>
     </Fragment>
   );
@@ -40,11 +48,19 @@ export async function getStaticProps() {
     "data/learning-people",
     "learning-people-projects.json"
   );
+  const filePathProjects = path.join(
+    process.cwd(),
+    "data/my-own-projects",
+    "projects.json"
+  );
   const jsonDataLP = await fs.readFile(filePathLP);
+  const jsonDataProjects = await fs.readFile(filePathProjects);
   const dataLP = JSON.parse(jsonDataLP);
+  const dataProjects = JSON.parse(jsonDataProjects);
   return {
     props: {
       projects: dataLP.projects,
+      myProjects: dataProjects.myProjects,
     },
   };
 }
