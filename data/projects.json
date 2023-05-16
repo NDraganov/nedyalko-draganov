@@ -1,0 +1,13 @@
+{
+  "myProjects": [
+    {
+      "id": "HelioStorm",
+      "image": "/images/project-images/heliostorm.png",
+      "title": "HelioStorm",
+      "technologies": "Next.js CSS",
+      "description": "HelioStorm is a simple weather website fetching data from the Open Weather Map API with the help of Axios. One-page website with a city search bar and a weather component below.",
+      "lhref": "https://weather-app-taupe.vercel.app",
+      "ghref": "https://github.com/NDraganov/weather-app"
+    }
+  ]
+}

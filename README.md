@@ -37,7 +37,7 @@ The purpose of the website is to get in touch and present myself to employers. I
 
 ## Development
 
-### Build with
+### Built with
 
 #### Next.js
 
