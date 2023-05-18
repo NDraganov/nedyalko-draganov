@@ -19,14 +19,6 @@ const Portfolio = ({ projects, myProjects }) => {
       </Head>
       <div className={classes.portfolio}>
         <h1>Porfolio</h1>
-        <section className={classes.learning}>
-          <h2>Learning People projects</h2>
-          <ul>
-            {projects.map((project) => (
-              <ProjectItem key={project.id} project={project} />
-            ))}
-          </ul>
-        </section>
         <section className={classes.myown}>
           <h2>My own projects</h2>
           <ul>
@@ -35,7 +27,15 @@ const Portfolio = ({ projects, myProjects }) => {
             ))}
           </ul>
         </section>
-        <CommingSoon text="Chat app coming soon ..." />
+        <section className={classes.learning}>
+          <h2>Learning People projects</h2>
+          <ul>
+            {projects.map((project) => (
+              <ProjectItem key={project.id} project={project} />
+            ))}
+          </ul>
+        </section>
+        <CommingSoon text="NoteBook website coming soon . . ." />
       </div>
     </Fragment>
   );
