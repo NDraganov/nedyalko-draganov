@@ -18,10 +18,14 @@ const ProjectItem = (props) => {
         ></Image>
         <div className={classes.description}>
           <h3>{title}</h3>
-          <h5>Build with</h5>
-          <p className={classes.technologies}>{technologies}</p>
-          <h5>Description</h5>
-          <p>{description}</p>
+          <div>
+            <h5>Build with</h5>
+            <p className={classes.technologies}>{technologies}</p>
+          </div>
+          <div>
+            <h5>Description</h5>
+            <p>{description}</p>
+          </div>
           <div className={classes.links}>
             <Button
               href={lhref}
