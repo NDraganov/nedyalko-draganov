@@ -8,6 +8,15 @@
       "description": "HelioStorm is a simple weather website fetching data from the Open Weather Map API with the help of Axios. A one-page website with a city search bar and a weather component below.",
       "lhref": "https://weather-app-taupe.vercel.app",
       "ghref": "https://github.com/NDraganov/weather-app"
+    },
+    {
+      "id": "NoteBook",
+      "image": "/images/project-images/notebook.png",
+      "title": "NoteBook",
+      "technologies": "Next.js CSS",
+      "description": "NoteBook is a simple website for taking digital notes. Featured a form with inputs for the title and the content. A list with the notes is displayed below the form. The size of every note is set, and the overflow of the content is hidden.",
+      "lhref": "https://notebook-rouge.vercel.app",
+      "ghref": "https://github.com/NDraganov/notebook"
     }
   ]
 }

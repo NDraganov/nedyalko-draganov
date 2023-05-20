@@ -35,7 +35,7 @@ const Portfolio = ({ projects, myProjects }) => {
             ))}
           </ul>
         </section>
-        <CommingSoon text="NoteBook website coming soon . . ." />
+        <CommingSoon text="" />
       </div>
     </Fragment>
   );
