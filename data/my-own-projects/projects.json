@@ -1,6 +1,15 @@
 {
   "myProjects": [
     {
+      "id": "DevGuide",
+      "image": "/images/project-images/dev-guide.png",
+      "title": "DevGuide",
+      "technologies": "Next.js CSS Firebase",
+      "description": "NoteBook is a web app for taking digital notes. Features a form with inputs for the title and the content. A list with the taken notes is displayed below.",
+      "lhref": "https://event-guide-seven.vercel.app",
+      "ghref": "https://github.com/NDraganov/event-guide"
+    },
+    {
       "id": "HelioStorm",
       "image": "/images/project-images/heliostorm.png",
       "title": "HelioStorm",

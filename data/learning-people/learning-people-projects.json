@@ -1,8 +1,8 @@
 {
   "projects": [
     {
-      "id": "My Website",
-      "image": "/images/project-images/Nedyalko-portfolio-website.png",
+      "id": "Portfolio",
+      "image": "/images/project-images/portfolio.png",
       "title": "Portfolio",
       "technologies": "HTML CSS Bootstrap",
       "description": "My first project for Learning People's course. The project aims to showcase my knowledge and ability to build a static portfolio website as required. Bootstrap is used to help with the layout and mobile responsiveness. Features navigation, about, skills, portfolio and contact sections.",
@@ -11,7 +11,7 @@
     },
     {
       "id": "GeoQuiz",
-      "image": "/images/project-images/GeoQuiz-game.png",
+      "image": "/images/project-images/geo-quiz.png",
       "title": "GeoQuiz",
       "technologies": "HTML CSS JavaScript Bootstrap",
       "description": "The GeoQuiz game is my second project with Learning People. The project aims to showcase my knowledge and ability to build a JavaScript interactive website. Features navigation, about, how to play and a quiz section. The quiz section contains questions, time and score trackers. There are sounds for correct and incorrect answers. After the completion of the quiz, a summary report is displayed.",
@@ -19,8 +19,8 @@
       "ghref": "https://github.com/NDraganov/JavaScript-QuizApp"
     },
     {
-      "id": "Sneakers e-commerce",
-      "image": "/images/project-images/Sneakers-e-commerce-website.png",
+      "id": "Sneakers",
+      "image": "/images/project-images/sneakers.png",
       "title": "Sneakers",
       "technologies": "React Bootstrap",
       "description": "Third project with Learning People. E-commerce website Sneakers. The project aims to showcase my knowledge and ability to build a React app. The website features navigation with links, cart and user image, lightbox gallery, buttons for the number of pairs, add to cart button and a checkout modal with a delete option.",
