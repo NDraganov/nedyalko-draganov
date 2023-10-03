@@ -23,7 +23,11 @@ const HomeLinks = () => {
           </Link>
         </div>
         <div className={classes.third}>
-          <Link href="/images/resume.pdf" target="_blank" title="Resume">
+          <Link
+            href="/images/NedyalkoDraganovResume.pdf"
+            target="_blank"
+            title="Resume"
+          >
             <InsertDriveFileOutlined sx={{ fontSize: 26 }} /> Resume
           </Link>
         </div>
