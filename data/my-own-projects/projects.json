@@ -1,6 +1,15 @@
 {
   "myProjects": [
     {
+      "id": "UkExpress",
+      "image": "/images/project-images/home.png",
+      "title": "UkExress",
+      "technologies": "React TypeScript ReduxToolkit Supabase ReactHookForm TailwindCSS",
+      "description": "UkExpress is an e-commerce web app. Build on front-end development with Vite. The products are fetched and cached with Redux Toolkit Query from dummyjson.com API. Authentication is implemented via Supabase API.",
+      "lhref": "https://uk-express.vercel.app",
+      "ghref": "https://github.com/NDraganov/uk-express"
+    },
+    {
       "id": "DevGuide",
       "image": "/images/project-images/dev-guide.png",
       "title": "DevGuide",
